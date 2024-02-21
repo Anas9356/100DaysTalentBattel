@@ -1,4 +1,4 @@
-
+//Char Enter by user is vowel or Consonant
 import java.util.Scanner;
 class statement1 {
     public static void main(String[] args)   
