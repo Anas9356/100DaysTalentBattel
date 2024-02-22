@@ -25,7 +25,7 @@ Enter the number
 11
 The number is odd
 
-Enter a Number
-11
-You Entered 11
+Enter the number
+10
+The number is Even
  */
