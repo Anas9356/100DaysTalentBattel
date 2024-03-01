@@ -1,32 +1,37 @@
-public class statement13 {
-    static int factorial(int n){
-        int fact=1;
-        for(int i = n; i >0; i-- ){
-            fact = fact * i ;
-            // System.out.println(fact);
-            }
-            return fact;
-    }
-        public static void main(String[] args) {
-            int n = 2; 
-            int sum = 0 ;
-            int rem = 0;
-            int z=n;
-            
-            while(n>0){
-                rem = n % 10;
-                // System.out.println(rem);
+// Day 13 coding Statement:  Write a program to find Sum of N natural numbers
+// Description
+// Get the input from the user for the value of n and then find the sum of first n natural numbers.
 
-               
-                sum = factorial(rem) + sum;
-                // System.out.println(sum);
-                n = n / 10;
-                // System.out.println(n);
-            }
-            if(z== sum){
-                System.out.println("strong");
-                }else
-                System.out.println("weak");
+import java.util.Scanner;
+
+public class statement13 {
+   
+        public static void main(String[] args) {
+
+         Scanner obj = new Scanner(System.in);
+        System.out.print("Enter an number  : ");
+        int number = obj.nextInt();
+        int sum=0;
+        while(number>0){
+            int rem=number%10;
+            sum+=rem;
+            number=number/10;
+        }
+        System.out.println("sum of digits : "+sum);
+
+
+
+
+
+        obj.close();
         }
     
 }
+
+/* 
+Enter an number  : 12345
+sum of digits : 15
+
+Enter an number  : 123
+sum of digits : 6
+*/
